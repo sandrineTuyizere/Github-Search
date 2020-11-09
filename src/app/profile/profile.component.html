@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <app-user-form (add)="addNew($event)"></app-user-form>
+    </div>
+    <div class="col-md-6" id="two">
+        <img src={{repos.avatar_url}} height="200">
+        <p appGith>User Name:{{Users.name}}</p>
+        <p appGith>Repositories:{{repos.repos}}</p>
+        <p appGith>Created:{{repos.created_at}}</p>
+        <p appGith>Followers:{{repos.followers}}</p>
+        <p appGith>Following:{{repos.following}}</p>
+        <a href={{repos.html_url}}>View Repo</a>
+    </div>
+  </div>
+  </div>
+  
